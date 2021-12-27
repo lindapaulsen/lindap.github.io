@@ -1,63 +1,71 @@
-<!DOCTYPE html>
-<html lang="eng">
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+	<!DOCTYPE html>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+	<!--  If necessary, please modify the charset parameter to specify the        -->
+	<!--  character set of your HTML page.                                        -->
+	<!--  ----------------------------------------------------------------------  -->
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+	<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTE: Please add the following <FORM> element to your page.             -->
+	<!--  ----------------------------------------------------------------------  -->
 
-<input type=hidden name="oid" value="00D7Y0000001RPf">
-<input type=hidden name="retURL" value="https://svorka.no/">
+	<form action="https://svorkaas--partial.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="support.svorka@fluidogroup.com">                                 -->
-<!--  ----------------------------------------------------------------------  -->
-
-Product:<select  id="00N7Y000008Wzmb" name="00N7Y000008Wzmb" title="Product"><option value="">--None--</option><option value="Fiber: bredbånd 100">Fiber: bredbånd 100</option>
-<option value="Fiber: bredbånd 300">Fiber: bredbånd 300</option>
-<option value="Fiber: bredbånd 500">Fiber: bredbånd 500</option>
-<option value="Fiber: bredbånd 100 + kabel-TV">Fiber: bredbånd 100 + kabel-TV</option>
-<option value="Fiber: bredbånd 300 + kabel-TV">Fiber: bredbånd 300 + kabel-TV</option>
-<option value="Fiber: bredbånd 500 + kabel-TV">Fiber: bredbånd 500 + kabel-TV</option>
-</select><br>
-
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-
-Date of Birth:<span class="dateInput dateOnlyInput"><input  id="00N7Y000008Wzm2" name="00N7Y000008Wzm2" size="12" type="text" /></span><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
-
-<label for="street">Street</label><textarea name="street"></textarea><br>
-
-<label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
-
-<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+	<input type=hidden name="orgid" value="00D7Y0000001RPf">
+	<input type=hidden name="retURL" value="https://svorkanett.no/">
+	<input type=hidden name="recordType" id="recordType" value="0127Y000001bSIKQA2">
 
 
-Existing Address:<input  id="00N7Y000008WznK" name="00N7Y000008WznK" type="checkbox" value="1" /><br>
+	<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+	<!--  these lines if you wish to test in debug mode.                          -->
+	<!--  <input type="hidden" name="debug" value=1>                              -->
+	<!--  <input type="hidden" name="debugEmail"                                  -->
+	<!--  value="support.svorka@fluidogroup.com">                                 -->
+	<!--  ----------------------------------------------------------------------  -->
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
+	<label for="subject">Product:</label>
+	<select name="subject" id="subject" title="Product">
+			      <option value="Fiber: bredbånd 100">Fiber: bredbånd 100</option>
+	  <option value="Fiber: bredbånd 300">Fiber: bredbånd 300</option>
+	  <option value="Fiber: bredbånd 500">Fiber: bredbånd 500</option>
+	  <option value="Fiber: bredbånd 100 + kabel-TV">Fiber: bredbånd 100 + kabel-TV</option>
+	  <option value="Fiber: bredbånd 300 + kabel-TV">Fiber: bredbånd 300 + kabel-TV</option>
+	  <option value="Fiber: bredbånd 500 + kabel-TV">Fiber: bredbånd 500 + kabel-TV</option>
+	</select>
+	<br>
 
-Premium Wifi:<input  id="00N7Y000008Wzm7" name="00N7Y000008Wzm7" type="checkbox" value="1" /><br>
+	<label for="name">Kontaktnavn</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-Campaign Code:<input  id="00N7Y000008WzmC" maxlength="20" name="00N7Y000008WzmC" size="20" type="text" /><br>
+	Date of Birth:<input  id="00N7Y000008ijU1" maxlength="20" name="00N7Y000008ijU1" size="20" type="text" /><br>
 
-<input type="submit" name="submit">
+	<label for="email">E-post</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-</form>
+	<label for="phone">Telefon</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+	Web Address:<input  id="00N7Y000008Whhi" maxlength="128" name="00N7Y000008Whhi" size="20" type="text" /><br>
+
+	Web City:<input  id="00N7Y000008Whhn" maxlength="128" name="00N7Y000008Whhn" size="20" type="text" /><br>
+
+	Web Postalcode:<input  id="00N7Y000008Whhx" maxlength="128" name="00N7Y000008Whhx" size="20" type="text" /><br>
+
+	Existing Address:<input  id="00N7Y000008ijUz" name="00N7Y000008ijUz" type="checkbox" value="1" /><br>
+
+	<label for="description">Beskrivelse</label><textarea name="description"></textarea><br>
+
+	Premium Wifi:<input  id="00N7Y000008ijV9" name="00N7Y000008ijV9" type="checkbox" value="1" /><br>
+
+	Vilkår/angrerett:<input  id="00N7Y000008ijVE" name="00N7Y000008ijVE" type="checkbox" value="1" /><br>
+
+	Marketing Consent:<input  id="00N7Y000008ijVO" name="00N7Y000008ijVO" type="checkbox" value="1" /><br>
+
+	Campaign Code:<input  id="00N7Y000008ijVT" maxlength="20" name="00N7Y000008ijVT" size="20" type="text" /><br>
+
+	GDPR Consent:<input  id="00N7Y000008ijVU" name="00N7Y000008ijVU" type="checkbox" value="1" /><br>
+
+	<input type="submit" name="submit">
+
+	</form>
